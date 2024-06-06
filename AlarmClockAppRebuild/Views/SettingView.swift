@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+//                            Toggle("Military Time", isOn: $isMilitaryToggleOn)
+//                            Toggle("Puzzles", isOn: $isPuzzles
+//                            NavigationLink("Sounds & Haptics")
+                    Text("Hello")
+                }
+            }
+            .navigationTitle("Settings")
     }
 }
 
