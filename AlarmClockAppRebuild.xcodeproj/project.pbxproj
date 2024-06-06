@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DFFDC5AF2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */; };
-		DFFDC5B12C121F79009D1FBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5B02C121F79009D1FBA /* ContentView.swift */; };
 		DFFDC5B32C121F7B009D1FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFDC5B22C121F7B009D1FBA /* Assets.xcassets */; };
 		DFFDC5B62C121F7B009D1FBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFDC5B52C121F7B009D1FBA /* Preview Assets.xcassets */; };
+		DFFDC5BF2C121FD7009D1FBA /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5BE2C121FD7009D1FBA /* LandingView.swift */; };
+		DFFDC5C12C121FED009D1FBA /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5C02C121FED009D1FBA /* AlarmView.swift */; };
+		DFFDC5C32C121FFF009D1FBA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5C22C121FFF009D1FBA /* SettingView.swift */; };
+		DFFDC5C52C122019009D1FBA /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5C42C122019009D1FBA /* PuzzleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DFFDC5AB2C121F79009D1FBA /* AlarmClockAppRebuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClockAppRebuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockAppRebuildApp.swift; sourceTree = "<group>"; };
-		DFFDC5B02C121F79009D1FBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFFDC5B22C121F7B009D1FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFFDC5B52C121F7B009D1FBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFFDC5BE2C121FD7009D1FBA /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		DFFDC5C02C121FED009D1FBA /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		DFFDC5C22C121FFF009D1FBA /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		DFFDC5C42C122019009D1FBA /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */,
-				DFFDC5B02C121F79009D1FBA /* ContentView.swift */,
+				DFFDC5BD2C121FB5009D1FBA /* Views */,
+				DFFDC5BC2C121FA7009D1FBA /* Model */,
 				DFFDC5B22C121F7B009D1FBA /* Assets.xcassets */,
 				DFFDC5B42C121F7B009D1FBA /* Preview Content */,
 			);
@@ -65,6 +72,24 @@
 				DFFDC5B52C121F7B009D1FBA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFFDC5BC2C121FA7009D1FBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFFDC5BD2C121FB5009D1FBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFFDC5BE2C121FD7009D1FBA /* LandingView.swift */,
+				DFFDC5C02C121FED009D1FBA /* AlarmView.swift */,
+				DFFDC5C22C121FFF009D1FBA /* SettingView.swift */,
+				DFFDC5C42C122019009D1FBA /* PuzzleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFFDC5B12C121F79009D1FBA /* ContentView.swift in Sources */,
+				DFFDC5BF2C121FD7009D1FBA /* LandingView.swift in Sources */,
+				DFFDC5C32C121FFF009D1FBA /* SettingView.swift in Sources */,
+				DFFDC5C12C121FED009D1FBA /* AlarmView.swift in Sources */,
 				DFFDC5AF2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift in Sources */,
+				DFFDC5C52C122019009D1FBA /* PuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
