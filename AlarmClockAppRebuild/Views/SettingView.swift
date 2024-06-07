@@ -20,25 +20,26 @@ struct SettingView: View {
         
         NavigationStack {
             VStack {
-                Form {
+                List {
                     Toggle(isOn: $isMilitaryTime) {
                         Text("Military Time")
                     }
                     Toggle(isOn: $arePuzzlesEnabled) {
                         Text("Puzzles")
                     }
+                    NavigationLink(destination: AlarmSoundsView()) {
+                        LabeledContent("Sounds & Haptics") {
+
+                        }
+                    }
                 }
-                .listStyle(.plain)
-                Spacer()
             }
             .navigationTitle("Setting")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-            }
         }
     }
 }
-
-#Preview {
-    SettingView()
-}
+        
+        #Preview {
+            SettingView()
+        }

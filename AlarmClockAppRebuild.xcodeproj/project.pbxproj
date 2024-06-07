@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFE20F912C13929200B00A28 /* AlarmSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE20F902C13929200B00A28 /* AlarmSoundsView.swift */; };
 		DFFDC5AF2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */; };
 		DFFDC5B32C121F7B009D1FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFDC5B22C121F7B009D1FBA /* Assets.xcassets */; };
 		DFFDC5B62C121F7B009D1FBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFDC5B52C121F7B009D1FBA /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFE20F902C13929200B00A28 /* AlarmSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundsView.swift; sourceTree = "<group>"; };
 		DFFDC5AB2C121F79009D1FBA /* AlarmClockAppRebuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClockAppRebuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockAppRebuildApp.swift; sourceTree = "<group>"; };
 		DFFDC5B22C121F7B009D1FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				DFFDC5C02C121FED009D1FBA /* AlarmView.swift */,
 				DFFDC5C22C121FFF009D1FBA /* SettingView.swift */,
 				DFFDC5C42C122019009D1FBA /* PuzzleView.swift */,
+				DFE20F902C13929200B00A28 /* AlarmSoundsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				DFFDC5C32C121FFF009D1FBA /* SettingView.swift in Sources */,
 				DFFDC5C12C121FED009D1FBA /* AlarmView.swift in Sources */,
 				DFFDC5AF2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift in Sources */,
+				DFE20F912C13929200B00A28 /* AlarmSoundsView.swift in Sources */,
 				DFFDC5C52C122019009D1FBA /* PuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
