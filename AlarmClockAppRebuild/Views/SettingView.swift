@@ -9,15 +9,33 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
+        
+        //Stored properties
+        
+        //Changing Military time
+        @State var isMilitaryTime: Bool = true
+        
+        //Enabled and Disable puzzles
+        @State var arePuzzlesEnabled: Bool = true
+        
         NavigationStack {
-            List {
-//                            Toggle("Military Time", isOn: $isMilitaryToggleOn)
-//                            Toggle("Puzzles", isOn: $isPuzzles
-//                            NavigationLink("Sounds & Haptics")
-                    Text("Hello")
+            VStack {
+                Form {
+                    Toggle(isOn: $isMilitaryTime) {
+                        Text("Military Time")
+                    }
+                    Toggle(isOn: $arePuzzlesEnabled) {
+                        Text("Puzzles")
+                    }
                 }
+                .listStyle(.plain)
+                Spacer()
             }
-            .navigationTitle("Settings")
+            .navigationTitle("Setting")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+            }
+        }
     }
 }
 

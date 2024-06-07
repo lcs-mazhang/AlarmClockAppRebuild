@@ -12,8 +12,8 @@ struct AlarmView: View {
         NavigationStack {
             VStack {
                 List {
-                    Text("6:30 AM")
-                    Text("9:30 AM")
+//                    Text("6:30 AM")
+//                    Text("9:30 AM")
                 }
                 .listStyle(.plain)
                 Spacer()
@@ -21,7 +21,9 @@ struct AlarmView: View {
             .navigationTitle("Alarm")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                // Top Tool bar item
                 ToolbarItem(placement: .navigationBarLeading) {
+                    // Adding alarm
                     Button {
                         // Func
                     } label: {
@@ -29,6 +31,7 @@ struct AlarmView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
+                    // Edit alarm
                     Button ("Edit") {
                         // Func
                     }
