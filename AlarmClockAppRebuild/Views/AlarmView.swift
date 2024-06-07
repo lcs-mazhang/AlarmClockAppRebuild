@@ -19,12 +19,18 @@ struct AlarmView: View {
                 Spacer()
             }
             .navigationTitle("Alarm")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
                         // Func
                     } label: {
                         Image(systemName: "plus")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button ("Edit") {
+                        // Func
                     }
                 }
             }
