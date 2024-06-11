@@ -9,7 +9,18 @@ import SwiftUI
 
 struct AlarmSoundsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                List {
+                    
+                    
+                }
+                .listStyle(.plain)
+                Spacer()
+            }
+            .navigationTitle("Sounds & Haptics")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
