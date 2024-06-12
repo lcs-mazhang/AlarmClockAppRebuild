@@ -20,6 +20,7 @@ struct AlarmView: View {
             }
             .navigationTitle("Alarm")
             .navigationBarTitleDisplayMode(.inline)
+            .bold()
             .toolbar {
                 // Top Tool bar item
                 ToolbarItem(placement: .navigationBarLeading) {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFB911A72C18B7FB00ECCFB6 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB911A62C18B7FB00ECCFB6 /* AlarmItem.swift */; };
+		DFB911A92C18B82F00ECCFB6 /* SoundsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB911A82C18B82F00ECCFB6 /* SoundsItem.swift */; };
 		DFE20F912C13929200B00A28 /* AlarmSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE20F902C13929200B00A28 /* AlarmSoundsView.swift */; };
 		DFFDC5AF2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */; };
 		DFFDC5B32C121F7B009D1FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFDC5B22C121F7B009D1FBA /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFB911A62C18B7FB00ECCFB6 /* AlarmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
+		DFB911A82C18B82F00ECCFB6 /* SoundsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsItem.swift; sourceTree = "<group>"; };
 		DFE20F902C13929200B00A28 /* AlarmSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundsView.swift; sourceTree = "<group>"; };
 		DFFDC5AB2C121F79009D1FBA /* AlarmClockAppRebuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClockAppRebuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockAppRebuildApp.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		DFFDC5BC2C121FA7009D1FBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DFB911A62C18B7FB00ECCFB6 /* AlarmItem.swift */,
+				DFB911A82C18B82F00ECCFB6 /* SoundsItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,8 +174,10 @@
 				DFFDC5BF2C121FD7009D1FBA /* LandingView.swift in Sources */,
 				DFFDC5C32C121FFF009D1FBA /* SettingView.swift in Sources */,
 				DFFDC5C12C121FED009D1FBA /* AlarmView.swift in Sources */,
+				DFB911A72C18B7FB00ECCFB6 /* AlarmItem.swift in Sources */,
 				DFFDC5AF2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift in Sources */,
 				DFE20F912C13929200B00A28 /* AlarmSoundsView.swift in Sources */,
+				DFB911A92C18B82F00ECCFB6 /* SoundsItem.swift in Sources */,
 				DFFDC5C52C122019009D1FBA /* PuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
