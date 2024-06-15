@@ -7,5 +7,7 @@
 
 import Foundation
 
-class SoundsItem: Identifiable {
-}
+struct SoundsItem: Identifiable {
+        let id = UUID()
+        let name: String
+    }
