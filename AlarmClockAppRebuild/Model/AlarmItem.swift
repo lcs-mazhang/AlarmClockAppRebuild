@@ -11,7 +11,7 @@ struct AlarmItem: Identifiable {
     
     // stored properties
     var id = UUID()
-    var selectedTime = Date()
+    var time = Date()
 }
 
 

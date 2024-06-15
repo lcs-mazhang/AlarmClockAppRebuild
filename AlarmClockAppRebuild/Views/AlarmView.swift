@@ -5,21 +5,23 @@
 //  Created by GengYu Zhang on 2024-06-06.
 //
 
+
 import SwiftUI
 
 struct AlarmView: View {
     
     // Stored properties
-    @State var alarmList = [Date]()
+    @State var alarmList = [AlarmItem]()
     @State var timepicker = false
     @State var selectedTime = Date()
-    
+//    @State var editing = false
+
     var body: some View {
         NavigationStack {
             VStack {
                 List {
-                    ForEach(alarmList, id: \.self) { time in
-                        Text(time, style: .time)
+                    ForEach(alarmList) { alarm in
+                        Text(alarm.time, style: .time)
                     }
                     .listStyle(.plain)
                     Spacer()
@@ -65,9 +67,11 @@ struct AlarmView: View {
         }
         
     }
-    func AddAlarmList(time: Date) {
-        alarmList.append(time)
+        func AddAlarmList(time: Date) {
+                let newAlarmList = AlarmItem(time: time)
+                alarmList.append(newAlarmList)
     }
+//    func Delete()
 }
 
 #Preview {
