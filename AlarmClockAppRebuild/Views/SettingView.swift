@@ -11,19 +11,12 @@ struct SettingView: View {
     var body: some View {
         
         //Stored properties
-        
-        //Changing Military time
-        @State var isMilitaryTime: Bool = true
-        
         //Enabled and Disable puzzles
         @State var arePuzzlesEnabled: Bool = true
         
         NavigationStack {
             VStack {
                 List {
-                    Toggle(isOn: $isMilitaryTime) {
-                        Text("Military Time")
-                    }
                     Toggle(isOn: $arePuzzlesEnabled) {
                         Text("Puzzles")
                     }

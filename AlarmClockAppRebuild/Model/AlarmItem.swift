@@ -11,8 +11,7 @@ struct AlarmItem: Identifiable {
     
     // stored properties
     var id = UUID()
-    var time: Date
-//    var isEnabled: Bool = true
+    var selectedTime = Date()
 }
 
 

@@ -18,6 +18,8 @@ struct AlarmView: View {
         NavigationStack {
             VStack {
                 List {
+                    ForEach(alarmList, id: \.self) { time in
+                        Text(time, style: .time)
                     }
                     .listStyle(.plain)
                     Spacer()
@@ -30,7 +32,7 @@ struct AlarmView: View {
                     ToolbarItem(placement: .navigationBarLeading) {
                         // Adding alarm
                         Button {
-                            // Func
+                            timepicker.toggle()
                         } label: {
                             Image(systemName: "plus")
                         }
@@ -42,10 +44,32 @@ struct AlarmView: View {
                         }
                     }
                 }
+                .sheet(isPresented: $timepicker) {
+                    // Date picker view
+                    List {
+                        DatePicker("Select Time", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                            .datePickerStyle(WheelDatePickerStyle())
+                            .labelsHidden()
+                        HStack{
+                            Spacer()
+                            Button("Add Alarm") {
+                                // Add the selected time and close the picker
+                                AddAlarmList(time: selectedTime)
+                                timepicker = false
+                            }
+                            Spacer()
+                        }
+                    }
+                }
             }
         }
+        
     }
-    
-    #Preview {
-        AlarmView()
+    func AddAlarmList(time: Date) {
+        alarmList.append(time)
     }
+}
+
+#Preview {
+    AlarmView()
+}

@@ -44,6 +44,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF0C101B2C1B5626008E02B0 /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
 		DFFDC5A22C121F79009D1FBA = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +70,7 @@
 		DFFDC5AD2C121F79009D1FBA /* AlarmClockAppRebuild */ = {
 			isa = PBXGroup;
 			children = (
+				DF0C101B2C1B5626008E02B0 /* HelperView */,
 				DFFDC5AE2C121F79009D1FBA /* AlarmClockAppRebuildApp.swift */,
 				DFFDC5BD2C121FB5009D1FBA /* Views */,
 				DFFDC5BC2C121FA7009D1FBA /* Model */,
